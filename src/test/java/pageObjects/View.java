@@ -19,4 +19,6 @@ public class View {
     @AndroidFindBy(id = "android:id/list")
     List<WebElement> lists;
 
+
+
 }
