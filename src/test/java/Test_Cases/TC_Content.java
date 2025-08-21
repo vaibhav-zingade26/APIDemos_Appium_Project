@@ -56,6 +56,11 @@ public class TC_Content implements String_TextView, UI_String {
         System.out.println("Vaibhav Zingade");
     }
 
+      @Test
+    public void regression_1(){
+        System.out.println("Kishor Gavali");
+    }
+
     @AfterClass
     public void closeApp(){
         homePage.quitDriver(driver);
