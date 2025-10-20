@@ -4,6 +4,7 @@
     <test verbose="2" preserve-order="true" name="D:/Appium/Android_app_automations/APIDemos/src/test/java/Test_Cases">
         <classes>
             <class name="Test_Cases.TC_ComplexCases"></class>
+            <class name="Test_Cases.TC_App"></class>
         </classes>
     </test>
 </suite>
