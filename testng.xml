@@ -3,23 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="D:/Appium/Android_app_automations/APIDemos/src/test/java/Test_Cases">
         <classes>
-            <class name="Test_Cases.TC_Accesibility">
-                <methods>
-                    <include name="Sanity_Accessibility"/>
-                </methods>
-            </class>
-            <class name="Test_Cases.TC_Animation">
-                <methods>
-                    <include name="TC_Sanity_Animation"/>
-                </methods>
-            </class>
-            <class name="Test_Cases.TC_App">
-                <methods>
-                    <include name="TC_Sanity_App"/>
-                    <include name="TC_ActionBar"/>
-                    <exclude name="TC_Activity"/>
-                </methods>
-            </class>
+            <class name="Test_Cases.TC_ComplexCases"></class>
         </classes>
     </test>
 </suite>
