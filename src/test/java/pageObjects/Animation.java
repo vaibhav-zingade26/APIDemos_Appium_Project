@@ -76,8 +76,8 @@ check whether the flipping is done or not
 
     */
 
-    public Animation(AppiumDriver driver){
-        PageFactory.initElements(new AppiumFieldDecorator(driver),this);
+    public Animation(AppiumDriver driver) {
+        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc=\"Bouncing Balls\"]")
@@ -132,22 +132,24 @@ check whether the flipping is done or not
     public WebElement Flip;
 
 
-    public void Added_ButtonIsDisplayed(int cout,AppiumDriver driver){
+    public void Added_ButtonIsDisplayed(int cout, AppiumDriver driver) {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        for(int i=1;i<=cout;i++){
-            driver.findElement(By.xpath("//android.widget.Button[@text="+i+"]")).isDisplayed();
-            System.out.println(i+": Button is added");
+        for (int i = 1; i <= cout; i++) {
+            driver.findElement(By.xpath("//android.widget.Button[@text=" + i + "]")).isDisplayed();
+            System.out.println(i + ": Button is added");
         }
     }
-    public void HideButtonsOnClicking(AppiumDriver driver){
-        for(int i=0;i<=3;i++){
-            driver.findElement(new By.ByXPath("//android.widget.Button[@text="+i+"]")).click();
+
+    public void HideButtonsOnClicking(AppiumDriver driver) {
+        for (int i = 0; i <= 3; i++) {
+            driver.findElement(new By.ByXPath("//android.widget.Button[@text=" + i + "]")).click();
         }
     }
-    public void Show_ButtonIsDisplayed(AppiumDriver driver){
+
+    public void Show_ButtonIsDisplayed(AppiumDriver driver) {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        for(int i=0;i<=3;i++){
-            driver.findElement(By.xpath("//android.widget.Button[@text="+i+"]")).isDisplayed();
+        for (int i = 0; i <= 3; i++) {
+            driver.findElement(By.xpath("//android.widget.Button[@text=" + i + "]")).isDisplayed();
 
         }
         System.out.println("All buttons are visible");

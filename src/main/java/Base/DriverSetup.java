@@ -27,9 +27,8 @@ public class DriverSetup {
         cap.setCapability("enforceXPath1", true);
         URL url = new URL("http://127.0.0.1:4723/");
         driver = new AndroidDriver(url,cap);
-        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
-
     }
 
 

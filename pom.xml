@@ -61,5 +61,42 @@
 
     </dependencies>
 
+    <!--<profiles>
+    &lt;!&ndash; Profiling in maven for mobile testing &ndash;&gt;
+    <profile>
+        <id>MobileTesting</id>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.2.5</version>
+                    &lt;!&ndash;  latest version  &ndash;&gt;
+                    <configuration>
+                        <suiteXmlFiles>
+                            <suiteXmlFile>D:\Appium\Android_app_automations\APIDemos\testng.xml</suiteXmlFile>
+                        </suiteXmlFiles>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
+    </profiles>-->
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 
 </project>
