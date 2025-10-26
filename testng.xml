@@ -5,6 +5,7 @@
         <classes>
             <class name="Test_Cases.TC_ComplexCases"></class>
             <class name="Test_Cases.TC_App"></class>
+            <class name="Test_Cases.TC_Content"></class>
         </classes>
     </test>
 </suite>
