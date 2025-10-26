@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/Appium/Android_app_automations/APIDemos">
+        <classes>
+            <class name="Test_Cases.TC_Accesibility">
+                <methods>
+                    <include name="Sanity_Accessibility"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.TC_Animation">
+                <methods>
+                    <include name="TC_Sanity_Animation"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.TC_App">
+                <methods>
+                    <include name="TC_Sanity_App"/>
+                    <include name="TC_ActionBar"/>
+                    <include name="TC_Activity_animation"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.TC_ComplexCases">
+                <methods>
+                    <include name="verifyExpandableLists"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.TC_Content">
+                <methods>
+                    <include name="TC_Assets"/>
+                    <include name="TC_Clipboard"/>
+                    <include name="regression"/>
+                    <include name="regression_1"/>
+                    <include name="regression_2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="listeners.TestListener"></listener>
+    </listeners>
+</suite>
